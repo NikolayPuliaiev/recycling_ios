@@ -13,6 +13,7 @@
 		750BA6DD2274A95E003DA132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BA6DB2274A95E003DA132 /* Main.storyboard */; };
 		750BA6DF2274A95F003DA132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750BA6DE2274A95F003DA132 /* Assets.xcassets */; };
 		750BA6E22274A95F003DA132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BA6E02274A95F003DA132 /* LaunchScreen.storyboard */; };
+		750BA6F02274B491003DA132 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6EF2274B491003DA132 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		750BA6DE2274A95F003DA132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750BA6E12274A95F003DA132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750BA6E32274A95F003DA132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750BA6EF2274B491003DA132 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2F014E09F21CAA22E4474F0 /* Pods-recycling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.debug.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.debug.xcconfig"; sourceTree = "<group>"; };
 		C6FDFC04F71DDBD4F2136255 /* Pods_recycling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recycling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAD7C0DDE2086D2750A2397 /* Pods-recycling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.release.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,14 +80,63 @@
 		750BA6D62274A95E003DA132 /* recycling */ = {
 			isa = PBXGroup;
 			children = (
+				750BA6F12274B4CB003DA132 /* Models */,
+				750BA6EE2274B440003DA132 /* Resources */,
+				750BA6ED2274B420003DA132 /* Controllers */,
+				750BA6EC2274B412003DA132 /* Constants */,
+				750BA6EB2274B3D4003DA132 /* Extensions */,
+				750BA6EA2274B3C6003DA132 /* Utils */,
 				750BA6D72274A95E003DA132 /* AppDelegate.swift */,
 				750BA6D92274A95E003DA132 /* ViewController.swift */,
 				750BA6DB2274A95E003DA132 /* Main.storyboard */,
-				750BA6DE2274A95F003DA132 /* Assets.xcassets */,
 				750BA6E02274A95F003DA132 /* LaunchScreen.storyboard */,
 				750BA6E32274A95F003DA132 /* Info.plist */,
 			);
 			path = recycling;
+			sourceTree = "<group>";
+		};
+		750BA6EA2274B3C6003DA132 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		750BA6EB2274B3D4003DA132 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		750BA6EC2274B412003DA132 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				750BA6EF2274B491003DA132 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		750BA6ED2274B420003DA132 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		750BA6EE2274B440003DA132 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				750BA6DE2274A95F003DA132 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		750BA6F12274B4CB003DA132 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +263,7 @@
 			files = (
 				750BA6DA2274A95E003DA132 /* ViewController.swift in Sources */,
 				750BA6D82274A95E003DA132 /* AppDelegate.swift in Sources */,
+				750BA6F02274B491003DA132 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
