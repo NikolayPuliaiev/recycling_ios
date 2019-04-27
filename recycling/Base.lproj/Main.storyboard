@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6J9-1P-cIP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sorting" id="GtJ-g1-7es"/>
+                    <tabBarItem key="tabBarItem" title="Sorting" image="sorting_tab" id="GtJ-g1-7es"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyV-U5-0lo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mrn-eG-eTO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="1BX-sA-H0K"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile_tab" id="1BX-sA-H0K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaU-5L-NFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9Jp-YP-Njj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorite" id="7MR-M8-sdN"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="favorite_tab" id="7MR-M8-sdN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nl-ZZ-Iow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +68,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bni-iI-FBR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="Nrl-Go-fcD"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map_tab" id="Nrl-Go-fcD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thv-CF-g2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,6 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.39215686274509803" green="0.38039215686274508" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="H68-40-mEt" kind="relationship" relationship="viewControllers" id="YWA-VM-rkV"/>
@@ -95,4 +96,10 @@
             <point key="canvasLocation" x="-322" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="favorite_tab" width="24" height="22"/>
+        <image name="map_tab" width="30" height="26"/>
+        <image name="profile_tab" width="17" height="22"/>
+        <image name="sorting_tab" width="22" height="22"/>
+    </resources>
 </document>
