@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079E4EDE94FADAAC5DD8D5B8 /* Pods_recycling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FDFC04F71DDBD4F2136255 /* Pods_recycling.framework */; };
 		750BA6D82274A95E003DA132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6D72274A95E003DA132 /* AppDelegate.swift */; };
 		750BA6DA2274A95E003DA132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6D92274A95E003DA132 /* ViewController.swift */; };
 		750BA6DD2274A95E003DA132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BA6DB2274A95E003DA132 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		750BA6DE2274A95F003DA132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750BA6E12274A95F003DA132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750BA6E32274A95F003DA132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F014E09F21CAA22E4474F0 /* Pods-recycling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.debug.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.debug.xcconfig"; sourceTree = "<group>"; };
+		C6FDFC04F71DDBD4F2136255 /* Pods_recycling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recycling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAD7C0DDE2086D2750A2397 /* Pods-recycling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.release.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079E4EDE94FADAAC5DD8D5B8 /* Pods_recycling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AAA8869E2F6708A65A9409A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6FDFC04F71DDBD4F2136255 /* Pods_recycling.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BA894A81871712FEF2A47CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2F014E09F21CAA22E4474F0 /* Pods-recycling.debug.xcconfig */,
+				EFAD7C0DDE2086D2750A2397 /* Pods-recycling.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		750BA6CB2274A95E003DA132 = {
 			isa = PBXGroup;
 			children = (
 				750BA6D62274A95E003DA132 /* recycling */,
 				750BA6D52274A95E003DA132 /* Products */,
+				3BA894A81871712FEF2A47CE /* Pods */,
+				3AAA8869E2F6708A65A9409A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 750BA6E62274A95F003DA132 /* Build configuration list for PBXNativeTarget "recycling" */;
 			buildPhases = (
+				F8C382016DF20857A3FC148C /* [CP] Check Pods Manifest.lock */,
 				750BA6D02274A95E003DA132 /* Sources */,
 				750BA6D12274A95E003DA132 /* Frameworks */,
 				750BA6D22274A95E003DA132 /* Resources */,
+				F1D86F16FB74FD04285CF683 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1D86F16FB74FD04285CF683 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recycling/Pods-recycling-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recycling/Pods-recycling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C382016DF20857A3FC148C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-recycling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		750BA6D02274A95E003DA132 /* Sources */ = {
@@ -280,10 +355,12 @@
 		};
 		750BA6E72274A95F003DA132 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F014E09F21CAA22E4474F0 /* Pods-recycling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = recycling/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +368,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaypuliaev.recycling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		750BA6E82274A95F003DA132 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAD7C0DDE2086D2750A2397 /* Pods-recycling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = recycling/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaypuliaev.recycling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
