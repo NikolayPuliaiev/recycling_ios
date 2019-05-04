@@ -97,6 +97,9 @@
                                         <real key="value" value="70"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCurrentLocationClick:" destination="H68-40-mEt" eventType="touchUpInside" id="i2O-ku-ldC"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arD-9O-vx7" userLabel="ListButton" customClass="LGButton" customModule="LGButton">
                                 <rect key="frame" x="348" y="733" width="50" height="50"/>
@@ -123,6 +126,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImageSrc" value="list"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onListClick:" destination="H68-40-mEt" eventType="valueChanged" id="9iy-xb-25b"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RJ-pr-D1t" customClass="LGButton" customModule="LGButton">
                                 <rect key="frame" x="348" y="511" width="50" height="50"/>
@@ -152,6 +158,9 @@
                                         <real key="value" value="70"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onFilterClick:" destination="H68-40-mEt" eventType="valueChanged" id="Kuo-ki-d0g"/>
+                                </connections>
                             </view>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HQb-pm-Tg5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>

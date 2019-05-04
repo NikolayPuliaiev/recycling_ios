@@ -17,23 +17,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager = CLLocationManager()
     let regionRadius: CLLocationDistance = 1000
     
+    //MARK:- Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configUI()
         
         //Start location manager to detect current location
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.startUpdatingLocation()
-    }
-
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
-                                                  latitudinalMeters: regionRadius,
-                                                  longitudinalMeters: regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
+        startLocationManager()
     }
     
     func configUI() {
@@ -55,7 +46,38 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         searchBar.layer.shouldRasterize = true
         searchBar.layer.rasterizationScale = UIScreen.main.scale
     }
+    
+    //MARK:- Button actions
 
+    @IBAction func onCurrentLocationClick(_ sender: Any) {
+        startLocationManager()
+    }
+    
+    @IBAction func onFilterClick(_ sender: Any) {
+    }
+    
+    @IBAction func onListClick(_ sender: Any) {
+    }
+    
+    /**
+     * Used to start location manager update
+     **/
+    func startLocationManager() {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+
+    }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+                                                  latitudinalMeters: regionRadius,
+                                                  longitudinalMeters: regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    //MARK:- LocationManager delegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else {
             print("LOCATION: Can't recognize current location")
