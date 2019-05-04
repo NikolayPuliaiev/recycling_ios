@@ -6,6 +6,5 @@ target 'recycling' do
     use_frameworks!
 
   # Pods for recycling
-    pod 'GoogleMaps'
-    pod 'GooglePlaces'
+    pod 'LGButton'
 end

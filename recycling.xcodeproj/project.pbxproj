@@ -17,9 +17,12 @@
 		750BA6FB2274BAF5003DA132 /* SortingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6FA2274BAF5003DA132 /* SortingViewController.swift */; };
 		750BA6FD2274BB04003DA132 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6FC2274BB04003DA132 /* ProfileViewController.swift */; };
 		750BA6FF2274BB11003DA132 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6FE2274BB11003DA132 /* FavoriteViewController.swift */; };
+		7525DD71227DE09900DF9DBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7525DD70227DE09900DF9DBA /* MapKit.framework */; };
+		B6A60743F4EA40533FD6EBC3 /* Pods_recycling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654C12AE8CDB95318D3AE54 /* Pods_recycling.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1654C12AE8CDB95318D3AE54 /* Pods_recycling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recycling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750BA6D42274A95E003DA132 /* recycling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recycling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750BA6D72274A95E003DA132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750BA6D92274A95E003DA132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		750BA6FA2274BAF5003DA132 /* SortingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingViewController.swift; sourceTree = "<group>"; };
 		750BA6FC2274BB04003DA132 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		750BA6FE2274BB11003DA132 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		7525DD70227DE09900DF9DBA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B2F014E09F21CAA22E4474F0 /* Pods-recycling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.debug.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.debug.xcconfig"; sourceTree = "<group>"; };
 		EFAD7C0DDE2086D2750A2397 /* Pods-recycling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.release.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7525DD71227DE09900DF9DBA /* MapKit.framework in Frameworks */,
+				B6A60743F4EA40533FD6EBC3 /* Pods_recycling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +56,8 @@
 		3AAA8869E2F6708A65A9409A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7525DD70227DE09900DF9DBA /* MapKit.framework */,
+				1654C12AE8CDB95318D3AE54 /* Pods_recycling.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,7 +198,7 @@
 				750BA6D02274A95E003DA132 /* Sources */,
 				750BA6D12274A95E003DA132 /* Frameworks */,
 				750BA6D22274A95E003DA132 /* Resources */,
-				F1D86F16FB74FD04285CF683 /* [CP] Copy Pods Resources */,
+				F01361BA119FF6883150D69B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +221,11 @@
 				TargetAttributes = {
 					750BA6D32274A95E003DA132 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -248,7 +261,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F1D86F16FB74FD04285CF683 /* [CP] Copy Pods Resources */ = {
+		F01361BA119FF6883150D69B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +269,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-recycling/Pods-recycling-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-recycling/Pods-recycling-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recycling/Pods-recycling-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recycling/Pods-recycling-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8C382016DF20857A3FC148C /* [CP] Check Pods Manifest.lock */ = {

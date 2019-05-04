@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ijN-5d-Yh8">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController title="SortingViewController" id="mZD-s8-JG1" customClass="SortingViewController" customModule="recycling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIq-9X-J4D">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6J9-1P-cIP"/>
@@ -31,7 +31,7 @@
             <objects>
                 <viewController title="ProfileViewController" id="842-Ph-qxc" customClass="ProfileViewController" customModule="recycling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ahY-h4-n6Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mrn-eG-eTO"/>
@@ -47,7 +47,7 @@
             <objects>
                 <viewController title="FavoriteViewController" id="ld0-HY-Gse" customClass="FavoriteViewController" customModule="recycling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fnG-66-nSn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9Jp-YP-Njj"/>
@@ -63,16 +63,131 @@
             <objects>
                 <viewController title="MapViewController" id="H68-40-mEt" customClass="MapViewController" customModule="recycling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YS6-wv-vj2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gKt-wY-nuC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAg-77-DZf" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="348" y="583" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1Cl-UW-Foi"/>
+                                    <constraint firstAttribute="height" constant="50" id="MvV-Uf-BTH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImageSrc" value="target"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftImageHeight">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arD-9O-vx7" userLabel="ListButton" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="348" y="733" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RTc-GG-FY8"/>
+                                    <constraint firstAttribute="width" constant="50" id="cIG-x5-Ghw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImageSrc" value="list"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RJ-pr-D1t" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="348" y="511" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9iQ-dE-R1L"/>
+                                    <constraint firstAttribute="width" constant="50" id="xiG-h9-cdN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImageSrc" value="controls"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftImageHeight">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQb-pm-Tg5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gKt-wY-nuC" firstAttribute="leading" secondItem="Bni-iI-FBR" secondAttribute="leading" id="Gae-kc-TWq"/>
+                            <constraint firstItem="Bni-iI-FBR" firstAttribute="bottom" secondItem="arD-9O-vx7" secondAttribute="bottom" constant="30" id="K3o-v4-7CC"/>
+                            <constraint firstItem="PAg-77-DZf" firstAttribute="top" secondItem="6RJ-pr-D1t" secondAttribute="bottom" constant="22" id="Mxv-Zt-mTe"/>
+                            <constraint firstItem="gKt-wY-nuC" firstAttribute="top" secondItem="YS6-wv-vj2" secondAttribute="top" id="O8F-93-ELp"/>
+                            <constraint firstItem="gKt-wY-nuC" firstAttribute="trailing" secondItem="Bni-iI-FBR" secondAttribute="trailing" id="PTH-da-UEJ"/>
+                            <constraint firstItem="arD-9O-vx7" firstAttribute="top" secondItem="PAg-77-DZf" secondAttribute="bottom" constant="100" id="ScH-eW-mwi"/>
+                            <constraint firstItem="Bni-iI-FBR" firstAttribute="trailing" secondItem="6RJ-pr-D1t" secondAttribute="trailing" constant="16" id="dzw-gt-3BW"/>
+                            <constraint firstItem="Bni-iI-FBR" firstAttribute="trailing" secondItem="arD-9O-vx7" secondAttribute="trailing" constant="16" id="gM8-3r-9wK"/>
+                            <constraint firstAttribute="trailing" secondItem="PAg-77-DZf" secondAttribute="trailing" constant="16" id="gzQ-bv-eD4"/>
+                            <constraint firstItem="gKt-wY-nuC" firstAttribute="bottom" secondItem="Bni-iI-FBR" secondAttribute="bottom" id="rv3-pA-TF5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bni-iI-FBR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map_tab" id="Nrl-Go-fcD"/>
+                    <connections>
+                        <outlet property="mapView" destination="gKt-wY-nuC" id="jfQ-Km-0po"/>
+                        <outlet property="searchBar" destination="HQb-pm-Tg5" id="oav-9g-BsM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thv-CF-g2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1406" y="915"/>
+            <point key="canvasLocation" x="-1407.2463768115942" y="914.0625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ojb-AA-KQ8">
@@ -97,9 +212,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="controls" width="17.5" height="17.5"/>
         <image name="favorite_tab" width="24" height="22"/>
+        <image name="list" width="17" height="13"/>
         <image name="map_tab" width="30" height="26"/>
         <image name="profile_tab" width="17" height="22"/>
         <image name="sorting_tab" width="22" height="22"/>
+        <image name="target" width="20" height="20"/>
     </resources>
 </document>

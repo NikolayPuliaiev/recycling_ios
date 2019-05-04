@@ -1,25 +1,16 @@
 PODS:
-  - GoogleMaps (3.1.0):
-    - GoogleMaps/Maps (= 3.1.0)
-  - GoogleMaps/Base (3.1.0)
-  - GoogleMaps/Maps (3.1.0):
-    - GoogleMaps/Base
-  - GooglePlaces (3.1.0):
-    - GoogleMaps/Base (= 3.1.0)
+  - LGButton (1.1.6)
 
 DEPENDENCIES:
-  - GoogleMaps
-  - GooglePlaces
+  - LGButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - GoogleMaps
-    - GooglePlaces
+    - LGButton
 
 SPEC CHECKSUMS:
-  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
-  GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
 
-PODFILE CHECKSUM: 5a8a4e7831410f394fb6834100f153dac80ab467
+PODFILE CHECKSUM: e2e1554ab997f94bb27ddc226c74f99b8d60a05d
 
 COCOAPODS: 1.6.1
