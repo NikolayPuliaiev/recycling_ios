@@ -153,9 +153,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQb-pm-Tg5">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HQb-pm-Tg5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
@@ -171,11 +170,14 @@
                             <constraint firstItem="PAg-77-DZf" firstAttribute="top" secondItem="6RJ-pr-D1t" secondAttribute="bottom" constant="22" id="Mxv-Zt-mTe"/>
                             <constraint firstItem="gKt-wY-nuC" firstAttribute="top" secondItem="YS6-wv-vj2" secondAttribute="top" id="O8F-93-ELp"/>
                             <constraint firstItem="gKt-wY-nuC" firstAttribute="trailing" secondItem="Bni-iI-FBR" secondAttribute="trailing" id="PTH-da-UEJ"/>
+                            <constraint firstItem="HQb-pm-Tg5" firstAttribute="leading" secondItem="Bni-iI-FBR" secondAttribute="leading" id="RPR-gg-1EB"/>
                             <constraint firstItem="arD-9O-vx7" firstAttribute="top" secondItem="PAg-77-DZf" secondAttribute="bottom" constant="100" id="ScH-eW-mwi"/>
                             <constraint firstItem="Bni-iI-FBR" firstAttribute="trailing" secondItem="6RJ-pr-D1t" secondAttribute="trailing" constant="16" id="dzw-gt-3BW"/>
                             <constraint firstItem="Bni-iI-FBR" firstAttribute="trailing" secondItem="arD-9O-vx7" secondAttribute="trailing" constant="16" id="gM8-3r-9wK"/>
                             <constraint firstAttribute="trailing" secondItem="PAg-77-DZf" secondAttribute="trailing" constant="16" id="gzQ-bv-eD4"/>
                             <constraint firstItem="gKt-wY-nuC" firstAttribute="bottom" secondItem="Bni-iI-FBR" secondAttribute="bottom" id="rv3-pA-TF5"/>
+                            <constraint firstItem="HQb-pm-Tg5" firstAttribute="top" secondItem="Bni-iI-FBR" secondAttribute="top" id="xQ7-HY-2El"/>
+                            <constraint firstItem="HQb-pm-Tg5" firstAttribute="trailing" secondItem="Bni-iI-FBR" secondAttribute="trailing" id="xxX-GU-iZI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bni-iI-FBR"/>
                     </view>
@@ -187,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thv-CF-g2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1407.2463768115942" y="914.0625"/>
+            <point key="canvasLocation" x="-1408.125" y="913.73239436619724"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ojb-AA-KQ8">

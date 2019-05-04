@@ -38,11 +38,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func configUI() {
         // Set clear background for SearchBar
-        for view in searchBar.subviews.last!.subviews {
-            if type(of: view) == NSClassFromString("UISearchBarBackground"){
-                view.alpha = 0.0
+        if let searchBarView = searchBar.subviews.last {
+            for view in searchBarView.subviews {
+                if type(of: view) == NSClassFromString("UISearchBarBackground"){
+                    view.alpha = 0.0
+                }
             }
         }
+        
+        // Set shadow for SearchBar
+        searchBar.layer.shadowColor = UIColor.init(hex: "#080808")?.cgColor
+        searchBar.layer.shadowOpacity = 0.1
+        searchBar.layer.shadowOffset = .zero
+        searchBar.layer.shadowRadius = 10
+        searchBar.layer.shadowPath = UIBezierPath(rect: searchBar.bounds).cgPath
+        searchBar.layer.shouldRasterize = true
+        searchBar.layer.rasterizationScale = UIScreen.main.scale
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

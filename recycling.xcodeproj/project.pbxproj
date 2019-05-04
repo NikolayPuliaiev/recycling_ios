@@ -18,6 +18,7 @@
 		750BA6FD2274BB04003DA132 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6FC2274BB04003DA132 /* ProfileViewController.swift */; };
 		750BA6FF2274BB11003DA132 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6FE2274BB11003DA132 /* FavoriteViewController.swift */; };
 		7525DD71227DE09900DF9DBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7525DD70227DE09900DF9DBA /* MapKit.framework */; };
+		7525DD73227E217400DF9DBA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525DD72227E217400DF9DBA /* UIColor.swift */; };
 		B6A60743F4EA40533FD6EBC3 /* Pods_recycling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654C12AE8CDB95318D3AE54 /* Pods_recycling.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		750BA6FC2274BB04003DA132 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		750BA6FE2274BB11003DA132 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		7525DD70227DE09900DF9DBA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7525DD72227E217400DF9DBA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B2F014E09F21CAA22E4474F0 /* Pods-recycling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.debug.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.debug.xcconfig"; sourceTree = "<group>"; };
 		EFAD7C0DDE2086D2750A2397 /* Pods-recycling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycling.release.xcconfig"; path = "Target Support Files/Pods-recycling/Pods-recycling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 		750BA6EB2274B3D4003DA132 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7525DD72227E217400DF9DBA /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				750BA6D82274A95E003DA132 /* AppDelegate.swift in Sources */,
 				750BA6FF2274BB11003DA132 /* FavoriteViewController.swift in Sources */,
 				750BA6F02274B491003DA132 /* Constants.swift in Sources */,
+				7525DD73227E217400DF9DBA /* UIColor.swift in Sources */,
 				750BA6FB2274BAF5003DA132 /* SortingViewController.swift in Sources */,
 				750BA6F52274B908003DA132 /* MapViewController.swift in Sources */,
 			);
